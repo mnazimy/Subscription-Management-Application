@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorMainactivity"
+    android:background="@drawable/newspaper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="10dp"
+            app:contentInsetRight="10dp"
+            app:contentInsetStart="10dp"
+            app:contentInsetStartWithNavigation="0dp"
+            tools:ignore="MissingConstraints"
+            android:background="@color/maroon">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetRight="0dp"
+                android:text="Subscription App"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:contentInsetLeft="10dp"
+                app:contentInsetRight="10dp"
+                app:contentInsetStart="10dp"
+                android:layout_marginStart="30dp"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <Button
+            android:id="@+id/view_subscribers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="view subscribers"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:drawableLeft="@drawable/subscribers"/>
+
+        <Button
+            android:id="@+id/view_newspapers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="view newspapers"
+            android:layout_margin="50dp"
+            android:drawableLeft="@drawable/newspapersimage"/>
+
+        <Button
+            android:id="@+id/view_magazines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="view magazines"
+            android:layout_margin="50dp"
+            android:drawableLeft="@drawable/magazine"/>
+
+        <Button
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="notfications"
+            android:layout_margin="50dp"
+            android:drawableLeft="@drawable/notificationimage"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

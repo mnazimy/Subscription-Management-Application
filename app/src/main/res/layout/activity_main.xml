@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/newspaper"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"
+        app:contentInsetStartWithNavigation="0dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/maroon">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:text="Subscription App"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:contentInsetLeft="10dp"
+            app:contentInsetRight="10dp"
+            app:contentInsetStart="10dp"
+            android:layout_marginStart="30dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/current_subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Subscription"
+                android:layout_margin="50dp"/>
+
+            <Button
+                android:id="@+id/add_new_subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Subscription"
+                android:layout_margin="50dp"/>
+
+            <Button
+                android:id="@+id/bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bill"
+                android:layout_margin="50dp"/>
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:layout_margin="50dp"/>
+
+            <Button
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calendar"
+                android:layout_margin="50dp"/>
+
+            <Button
+                android:id="@+id/editdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Details"
+                android:layout_margin="50dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
